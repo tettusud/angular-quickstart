@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/partials/variables';
+@import 'assets/partials/fonts';
+@import '~materialize-css/sass/materialize';
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0px;
+  background-color: map-get($color, backgroundColor);
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.brand-logo {
+  line-height: 64px;
+
+  img {
+    height: 64px;
+  }
+}
+
+.active-link {
+  color: #999;
+}

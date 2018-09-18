@@ -1,0 +1,17 @@
+<nav>
+  <div class="container">
+    <div class="nav-wrapper">
+      <a class="brand-logo">
+        <img src="assets/images/image_large.svg" />
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li *ngFor="let item of menus"> <a [routerLink]="[item.routerUrl]" routerLinkActive="active-link">
+          {{item.menuName}}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+  <li *ngFor="let item of menus"><a [routerLink]="[item.routerUrl]">{{item.menuName}}</a></li>
+</ul>
