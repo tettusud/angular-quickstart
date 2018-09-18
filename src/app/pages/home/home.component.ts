@@ -9,12 +9,14 @@ import { Chart } from 'chart.js';
 })
 export class HomeComponent implements OnInit {
 
+    chart:Chart;
+
     ngOnInit(): void {
-        const ctx = document.getElementById('canvas');
+        const ctx = document.getElementById('pie');
         const data = {
             datasets: [{
-                data: [10, 20, 30],
-                backgroundColor: ['red', 'yellow', 'blue'],
+                data: [18, 20, 30],
+                backgroundColor: ['#545454', '#373534', '#000'],
                 fill: true
             }],
 
@@ -29,6 +31,21 @@ export class HomeComponent implements OnInit {
         this.chart = new Chart(ctx, {
             type: 'pie',
             data: data,
+            options: {}
+        });
+        const data1 = {
+            datasets: [{
+                data: [18, 20, 30],
+                backgroundColor: ['#545454', '#373534', '#000'],
+                fill: true
+            }],
+ 
+        };
+
+        const barCtx = document.getElementById('bar');
+        let myBarChart = new Chart(barCtx, {
+            type: 'horizontalBar',
+            data: data1,
             options: {}
         });
     }

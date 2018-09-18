@@ -5,14 +5,16 @@
   <div class="container">
     <div class="row">
       <div class="col s12 m3">
-        <div class="rHeader">
-          <div>
-            <i class="material-icons">
-              view_list
-            </i>
-          </div>
-          <div>
-            <h5>Version</h5>
+        <div class="row-header">
+          <div class="content">
+            <div>
+              <i class="material-icons">
+                  list
+              </i>
+            </div>
+            <div>
+              <h5>Features</h5>
+            </div>
           </div>
         </div>
       </div>
@@ -26,21 +28,49 @@
 
       </div>
     </div>
-    <hr>
+    <hr>  
+
     <div class="row">
       <div class="col m3">
-        <div class="rHeader">
-          <div>
-            <i class="material-icons">
-              format_list_bulleted
-            </i>
-          </div>
-          <div>
-            <h5>Features</h5>
+        <div class="row-header">
+          <div class="content">
+            <div>
+              <i class="material-icons">
+                pie_chart
+              </i>
+            </div>
+            <div>
+              <h5>Features</h5>
+            </div>
           </div>
         </div>
       </div>
       <div class="col m9">
+        <div class="charts">
+          <canvas id="pie">{{ chart }}</canvas>
+        </div>
+        <div class="charts">
+            <canvas id="bar">{{ chart }}</canvas>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col m3">
+          <div class="row-header">
+            <div class="content">
+              <div>
+                <i class="material-icons">
+                  format_list_bulleted
+                </i>
+              </div>
+              <div>
+                <h5>Features</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m9">
           <ul>
             <li> Modular</li>
             <li> Reusable Libraries</li>
@@ -59,29 +89,9 @@
             <li> Material design</li>
             <li> PWA</li>
           </ul>
-      </div>
-    </div>
-    <hr>
-
-    <div class="row">
-      <div class="col m3">
-        <div class="rHeader">
-          <div>
-            <i class="material-icons">
-              pie_chart
-            </i>
-          </div>
-          <div>
-            <h5>Features</h5>
-          </div>
         </div>
       </div>
-      <div class="col m9">
-        <div style="height:400px;width:400px">
-          <canvas id="canvas">{{ chart }}</canvas>
-        </div>
-      </div>
-    </div>
+    
 
   </div>
 </div>
