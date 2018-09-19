@@ -6,3 +6,5 @@
  * npm install material-design-icons --save
  * import materialize js and scss
  * ng generate library documentation --prefix=lib
+
+ 

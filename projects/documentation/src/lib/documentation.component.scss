@@ -1,7 +1,48 @@
+@import 'assets/partials/variables'
 
-
-.menus{
-    min-height:500px;
-    background-color: map-get($colors, menuBackgroundColor);
-    opacity:0.9;
-}
+header {
+    background-color: #373534;
+    min-height: 100px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .row-header {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  
+    i {
+      font-size: 64px;
+    }
+  
+    .content {
+      text-align: left;
+    }
+  }
+  
+  .charts {
+    height: 260px;
+    width: 360px;
+    border: 1px #efefef solid;
+  }
+  
+  ul {
+    font-size: 1.0rem;
+    color: #000;
+  
+    li {
+      list-style-type: circle !important;
+    }
+  
+  }
+  
+  .title {
+    font-size: 36px;
+    line-height: 1.04167;
+    font-weight: 500;
+    letter-spacing: 0.006em;
+    color: #fff;
+  }
+  
